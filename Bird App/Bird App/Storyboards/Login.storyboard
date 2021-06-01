@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xDO-Ne-tGw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="kMi-Ke-FK4">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="xDO-Ne-tGw" customClass="LoginViewController" customModule="Bird_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wIy-hH-vR4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xki-pU-zjF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="y1y-1F-Eyf">
+                                        <rect key="frame" x="-210" y="0.0" width="924" height="896"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5u-9p-ghl">
+                                        <rect key="frame" x="20" y="310.5" width="374" height="275"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xsq-Zh-9Ob">
+                                                <rect key="frame" x="0.0" y="10" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Fk3-Pv-i18"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Md8-KO-xry">
+                                                <rect key="frame" x="0.0" y="80" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="GqF-CC-eOv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhN-9o-5KC" customClass="CustomButton" customModule="Bird_App" customModuleProvider="target">
+                                                <rect key="frame" x="40" y="180" width="294" height="45"/>
+                                                <color key="backgroundColor" red="0.0" green="0.37254901960784315" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="t7W-hx-hRf"/>
+                                                </constraints>
+                                                <state key="normal" title="LOGIN">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffSet">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="22.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                        <color key="value" red="0.0" green="0.37254901960784315" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginTapped:" destination="xDO-Ne-tGw" eventType="touchUpInside" id="Nhy-mW-8dv"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZs-D8-Iyu">
+                                                <rect key="frame" x="57.5" y="240" width="179" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRp-9Y-RLU">
+                                                <rect key="frame" x="241.5" y="235.5" width="60" height="30"/>
+                                                <state key="normal" title="SIGN UP">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km4-2a-02C">
+                                                <rect key="frame" x="256" y="130" width="108" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal" title="Forget Password?">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Md8-KO-xry" firstAttribute="leading" secondItem="W5u-9p-ghl" secondAttribute="leading" id="BSy-gS-5H0"/>
+                                            <constraint firstItem="MhN-9o-5KC" firstAttribute="top" secondItem="Md8-KO-xry" secondAttribute="bottom" constant="50" id="FPQ-3p-Rxd"/>
+                                            <constraint firstAttribute="trailing" secondItem="Md8-KO-xry" secondAttribute="trailing" id="JzI-Xx-jWc"/>
+                                            <constraint firstItem="Md8-KO-xry" firstAttribute="top" secondItem="xsq-Zh-9Ob" secondAttribute="bottom" constant="20" id="MYF-33-SfL"/>
+                                            <constraint firstItem="MhN-9o-5KC" firstAttribute="leading" secondItem="W5u-9p-ghl" secondAttribute="leading" constant="40" id="OJL-Ea-9tR"/>
+                                            <constraint firstAttribute="height" constant="275" id="ROi-gM-KT0"/>
+                                            <constraint firstAttribute="trailing" secondItem="MhN-9o-5KC" secondAttribute="trailing" constant="40" id="VZO-dr-oC6"/>
+                                            <constraint firstItem="km4-2a-02C" firstAttribute="top" secondItem="Md8-KO-xry" secondAttribute="bottom" id="WAa-rp-Zxx"/>
+                                            <constraint firstAttribute="trailing" secondItem="km4-2a-02C" secondAttribute="trailing" constant="10" id="eb7-QX-fac"/>
+                                            <constraint firstItem="yRp-9Y-RLU" firstAttribute="centerY" secondItem="CZs-D8-Iyu" secondAttribute="centerY" id="gUm-v2-BVG"/>
+                                            <constraint firstItem="xsq-Zh-9Ob" firstAttribute="top" secondItem="W5u-9p-ghl" secondAttribute="top" constant="10" id="hUD-tj-r9b"/>
+                                            <constraint firstItem="CZs-D8-Iyu" firstAttribute="centerX" secondItem="W5u-9p-ghl" secondAttribute="centerX" constant="-40" id="jrv-qK-a9d"/>
+                                            <constraint firstItem="CZs-D8-Iyu" firstAttribute="top" secondItem="MhN-9o-5KC" secondAttribute="bottom" constant="15" id="nPW-KZ-0dZ"/>
+                                            <constraint firstItem="xsq-Zh-9Ob" firstAttribute="leading" secondItem="W5u-9p-ghl" secondAttribute="leading" id="pOG-6m-vbI"/>
+                                            <constraint firstAttribute="trailing" secondItem="xsq-Zh-9Ob" secondAttribute="trailing" id="qyc-P3-VYs"/>
+                                            <constraint firstItem="yRp-9Y-RLU" firstAttribute="leading" secondItem="CZs-D8-Iyu" secondAttribute="trailing" constant="5" id="x91-hi-map"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flock-bird-migration-black-silhouette-flying-vector-illustration-isolated_97231-1270" translatesAutoresizingMaskIntoConstraints="NO" id="Ko9-n9-bQi">
+                                        <rect key="frame" x="0.0" y="585.5" width="414" height="310.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.48627450979999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ko9-n9-bQi" firstAttribute="leading" secondItem="xki-pU-zjF" secondAttribute="leading" id="8gH-H2-zuN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ko9-n9-bQi" secondAttribute="trailing" id="Dp4-4M-mtX"/>
+                                    <constraint firstAttribute="bottom" secondItem="y1y-1F-Eyf" secondAttribute="bottom" id="Dqd-cB-3wN"/>
+                                    <constraint firstItem="y1y-1F-Eyf" firstAttribute="top" secondItem="xki-pU-zjF" secondAttribute="top" id="GbF-0R-vTy"/>
+                                    <constraint firstItem="y1y-1F-Eyf" firstAttribute="leading" secondItem="xki-pU-zjF" secondAttribute="leading" constant="-210" id="HtE-DW-g7w"/>
+                                    <constraint firstItem="Ko9-n9-bQi" firstAttribute="top" secondItem="W5u-9p-ghl" secondAttribute="bottom" id="Vby-nF-W0h"/>
+                                    <constraint firstItem="W5u-9p-ghl" firstAttribute="centerY" secondItem="xki-pU-zjF" secondAttribute="centerY" id="X0e-xM-jvK"/>
+                                    <constraint firstItem="W5u-9p-ghl" firstAttribute="leading" secondItem="xki-pU-zjF" secondAttribute="leading" constant="20" id="Y9N-v8-kdV"/>
+                                    <constraint firstAttribute="trailing" secondItem="W5u-9p-ghl" secondAttribute="trailing" constant="20" id="cTN-ba-clr"/>
+                                    <constraint firstAttribute="trailing" secondItem="y1y-1F-Eyf" secondAttribute="trailing" constant="-300" id="njo-lV-AXq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ko9-n9-bQi" secondAttribute="bottom" id="rqH-Tt-MhW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SIa-fZ-WmT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xki-pU-zjF" secondAttribute="bottom" id="6OA-ja-65w"/>
+                            <constraint firstItem="xki-pU-zjF" firstAttribute="top" secondItem="wIy-hH-vR4" secondAttribute="top" id="8z7-xa-iYL"/>
+                            <constraint firstItem="xki-pU-zjF" firstAttribute="leading" secondItem="SIa-fZ-WmT" secondAttribute="leading" id="H3l-2B-heB"/>
+                            <constraint firstItem="SIa-fZ-WmT" firstAttribute="trailing" secondItem="xki-pU-zjF" secondAttribute="trailing" id="J6f-1Q-9Q4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6c-5c-B06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-457" y="50"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="MhN-9o-5KC">
+            <size key="intrinsicContentSize" width="45" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="background" width="2500" height="1500"/>
+        <image name="flock-bird-migration-black-silhouette-flying-vector-illustration-isolated_97231-1270" width="626" height="417"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

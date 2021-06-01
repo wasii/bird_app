@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Bird App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Bird App
+pod 'Alamofire'
+pod 'SwipeMenuViewController'
+pod 'SkyFloatingLabelTextField', '~> 3.0'
+pod 'IQKeyboardManagerSwift'
+pod 'DatePickerDialog'
+pod 'SideMenu'
+end
